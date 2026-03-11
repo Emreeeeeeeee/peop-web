@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peoplise — Yeni Nesil Yetenek Kazanımı Platformu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-wrap">
+            <a href="#" class="nav-logo">peoplise</a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-dropdown" id="navDropdown">
+                    <a href="#platform" class="nav-drop-trigger">Ürünler <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <div class="dropdown-panel">
+                        <div class="dropdown-mega">
+                            <div class="drop-col">
+                                <a href="#platform" class="drop-col-head drop-col-head--amber">Analyse</a>
+                                <span class="drop-col-sub">Aday Takip Sistemi</span>
+                                <ul class="drop-links">
+                                    <li><a href="#platform">Aday Takip Sistemi</a></li>
+                                    <li><a href="#platform">Entegre Test ve Envanterler</a></li>
+                                </ul>
+                            </div>
+                            <div class="drop-col">
+                                <a href="#platform" class="drop-col-head drop-col-head--green">Harmonise</a>
+                                <span class="drop-col-sub">Onboarding Platformu</span>
+                                <ul class="drop-links">
+                                    <li><a href="#platform">Oryantasyon Programı</a></li>
+                                    <li><a href="#platform">Onboarding</a></li>
+                                    <li><a href="#platform">Remote Onboarding</a></li>
+                                    <li><a href="#platform">Reboarding</a></li>
+                                    <li><a href="#platform">Offboarding</a></li>
+                                </ul>
+                            </div>
+                            <div class="drop-col">
+                                <a href="#platform" class="drop-col-head drop-col-head--purple">Casebot</a>
+                                <span class="drop-col-sub">Değerlendirme Merkezi</span>
+                                <ul class="drop-links">
+                                    <li><a href="#platform">Online Vaka Analizi</a></li>
+                                    <li><a href="#platform">Yetkinlik Testleri</a></li>
+                                </ul>
+                            </div>
+                            <div class="drop-col">
+                                <a href="#platform" class="drop-col-head drop-col-head--rose">Recognise</a>
+                                <span class="drop-col-sub">Yetenek Yönetimi</span>
+                                <ul class="drop-links">
+                                    <li><a href="#platform">Performans Değerlendirme</a></li>
+                                    <li><a href="#platform">Kariyer Yol Haritası</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#testimonials">Referanslar</a></li>
+                <li><a href="#">Entegrasyonlar</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Bilgi Al</a>
+            <button class="hamburger" id="hamburger" aria-label="Menü"><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- =================== HERO =================== -->
+    <section class="hero">
+        <div class="hero-glow hero-glow--1"></div>
+        <div class="hero-glow hero-glow--2"></div>
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>İnsan kaynakları süreçlerinizi <em>dijitalleştirin.</em></h1>
+                <p>İşe alım, değerlendirme ve onboarding süreçlerinizi tek platformdan yönetin. Daha hızlı kararlar, daha iyi aday deneyimi.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn--primary">Ücretsiz Demo Al <span>&rarr;</span></a>
+                    <a href="#platform" class="btn btn--ghost">Platformu Keşfet</a>
+                </div>
+            </div>
+            <div class="hero-form-wrap">
+                <div class="hero-form-card" id="heroForm">
+                    <h3>Bilgi Talep Formu</h3>
+                    <p>Size özel demo için formu doldurun.</p>
+                    <form onsubmit="return false;">
+                        <div class="form-group">
+                            <label>Ad Soyad</label>
+                            <input type="text" placeholder="Adınız Soyadınız">
+                        </div>
+                        <div class="form-group">
+                            <label>Şirket</label>
+                            <input type="text" placeholder="Şirket Adı">
+                        </div>
+                        <div class="form-group">
+                            <label>İş E-posta</label>
+                            <input type="email" placeholder="ornek@sirket.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefon</label>
+                            <input type="tel" placeholder="+90 5XX XXX XX XX">
+                        </div>
+                        <button type="submit" class="btn btn--form">Bilgi Al <span>&rarr;</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== LOGOS SLIDER =================== -->
+    <section class="logos-section">
+        <div class="container"></div>
+        <div class="logos-track">
+            <div class="logos-slide">
+                <img class="logo-img" src="images/marka-logo/arcelik_logo.png" alt="Arçelik">
+                <img class="logo-img" src="images/marka-logo/ford-otosan-logo.png" alt="Ford Otosan">
+                <img class="logo-img" src="images/marka-logo/mercedes-benz-logo.png" alt="Mercedes-Benz">
+                <img class="logo-img" src="images/marka-logo/garanti-logo.png" alt="Garanti BBVA">
+                <img class="logo-img" src="images/marka-logo/koc-logo.png" alt="Koç Holding">
+                <img class="logo-img" src="images/marka-logo/kpmg-logo-1.png" alt="KPMG">
+                <img class="logo-img" src="images/marka-logo/sunexpress-logo-1.png" alt="SunExpress">
+                <img class="logo-img" src="images/marka-logo/carrefoursa-logo-1.png" alt="Carrefoursa">
+                <img class="logo-img" src="images/marka-logo/turkiye-is-bankasi-logo.png" alt="Türkiye İş Bankası">
+                <img class="logo-img" src="images/marka-logo/yemeksepeti-logo.png" alt="Yemeksepeti">
+                <img class="logo-img" src="images/marka-logo/opet-logo.png" alt="Opet">
+                <img class="logo-img" src="images/marka-logo/sisecam-yatay-logo.png" alt="Şişecam">
+                <img class="logo-img" src="images/marka-logo/turk-traktor-logo.png" alt="Türk Traktör">
+                <img class="logo-img" src="images/marka-logo/sutas-logo.png" alt="Sütaş">
+                <img class="logo-img" src="images/marka-logo/aygaz-logo.png" alt="Aygaz">
+                <img class="logo-img" src="images/marka-logo/kale-logo.png" alt="Kale">
+                <img class="logo-img" src="images/marka-logo/koctas-logo.png" alt="Koçtaş">
+                <img class="logo-img" src="images/marka-logo/otokoc_logo.png" alt="Otokoç">
+                <img class="logo-img" src="images/marka-logo/freebird-logo.png" alt="Freebird">
+                <img class="logo-img" src="images/marka-logo/ets.png" alt="ETS">
+                <!-- duplicate for seamless loop -->
+                <img class="logo-img" src="images/marka-logo/arcelik_logo.png" alt="Arçelik">
+                <img class="logo-img" src="images/marka-logo/ford-otosan-logo.png" alt="Ford Otosan">
+                <img class="logo-img" src="images/marka-logo/mercedes-benz-logo.png" alt="Mercedes-Benz">
+                <img class="logo-img" src="images/marka-logo/garanti-logo.png" alt="Garanti BBVA">
+                <img class="logo-img" src="images/marka-logo/koc-logo.png" alt="Koç Holding">
+                <img class="logo-img" src="images/marka-logo/kpmg-logo-1.png" alt="KPMG">
+                <img class="logo-img" src="images/marka-logo/sunexpress-logo-1.png" alt="SunExpress">
+                <img class="logo-img" src="images/marka-logo/carrefoursa-logo-1.png" alt="Carrefoursa">
+                <img class="logo-img" src="images/marka-logo/turkiye-is-bankasi-logo.png" alt="Türkiye İş Bankası">
+                <img class="logo-img" src="images/marka-logo/yemeksepeti-logo.png" alt="Yemeksepeti">
+                <img class="logo-img" src="images/marka-logo/opet-logo.png" alt="Opet">
+                <img class="logo-img" src="images/marka-logo/sisecam-yatay-logo.png" alt="Şişecam">
+                <img class="logo-img" src="images/marka-logo/turk-traktor-logo.png" alt="Türk Traktör">
+                <img class="logo-img" src="images/marka-logo/sutas-logo.png" alt="Sütaş">
+                <img class="logo-img" src="images/marka-logo/aygaz-logo.png" alt="Aygaz">
+                <img class="logo-img" src="images/marka-logo/kale-logo.png" alt="Kale">
+                <img class="logo-img" src="images/marka-logo/koctas-logo.png" alt="Koçtaş">
+                <img class="logo-img" src="images/marka-logo/otokoc_logo.png" alt="Otokoç">
+                <img class="logo-img" src="images/marka-logo/freebird-logo.png" alt="Freebird">
+                <img class="logo-img" src="images/marka-logo/ets.png" alt="ETS">
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== PLATFORM =================== -->
+    <section class="platform" id="platform">
+        <div class="container">
+            <div class="section-head center">
+                <h2>Tüm İK süreçleriniz,<br><em>tek platformda.</em></h2>
+                <p class="section-sub">İşe alım, değerlendirme, onboarding ve yetenek yönetimi süreçlerinizi tek bir dijital platformdan yönetin.</p>
+            </div>
+
+            <!-- Feature 1 -->
+            <div class="feat-row">
+                <div class="feat-content">
+                    <span class="feat-tag tag--amber">İşe Alım</span>
+                    <h3>Aday takibini kolaylaştırın</h3>
+                    <p>İş ilanlarınızı çoklu kanallardan yayınlayın, başvuruları tek bir panelden takip edin. AI destekli CV tarama ile en uygun adayları saniyeler içinde bulun.</p>
+                    <ul class="feat-list">
+                        <li>Çoklu kanal ilan yönetimi</li>
+                        <li>AI destekli CV eşleştirme</li>
+                        <li>Otomatik aday skorlama</li>
+                    </ul>
+                </div>
+                <div class="feat-visual">
+                    <div class="feat-mockup mockup--amber">
+                        <div class="mock-bar"><span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span><span class="mock-title">Analyse — Aday Takip</span></div>
+                        <div class="mock-body">
+                            <div class="mock-stat-row">
+                                <div class="mock-stat"><div class="ms-val">248</div><div class="ms-lbl">Aktif Aday</div><div class="ms-bar"><span style="width:78%"></span></div></div>
+                                <div class="mock-stat"><div class="ms-val">52</div><div class="ms-lbl">Açık Pozisyon</div><div class="ms-bar bar--purple"><span style="width:62%"></span></div></div>
+                                <div class="mock-stat"><div class="ms-val">89%</div><div class="ms-lbl">Doluluk</div><div class="ms-bar bar--green"><span style="width:89%"></span></div></div>
+                            </div>
+                            <div class="mock-rows">
+                                <div class="mock-row"><span class="mr-dot mr--green"></span><span class="mr-name"></span><span class="mr-badge">Mülakat</span></div>
+                                <div class="mock-row"><span class="mr-dot mr--amber"></span><span class="mr-name"></span><span class="mr-badge mr-badge--o">Değerlendirme</span></div>
+                                <div class="mock-row"><span class="mr-dot mr--purple"></span><span class="mr-name"></span><span class="mr-badge mr-badge--p">Teklif</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feat-row feat-row--rev">
+                <div class="feat-content">
+                    <span class="feat-tag tag--purple">Değerlendirme</span>
+                    <h3>Doğru adayı seçin</h3>
+                    <p>400+ entegre test ve envanter ile adaylarınızı objektif olarak ölçümleyin. Yetkinlik bazlı analizlerle en uygun adayı belirleyin.</p>
+                    <ul class="feat-list">
+                        <li>400+ test ve envanter</li>
+                        <li>Online vaka analizi</li>
+                        <li>Yetkinlik bazlı raporlama</li>
+                    </ul>
+                </div>
+                <div class="feat-visual">
+                    <div class="feat-mockup mockup--purple">
+                        <div class="mock-bar"><span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span><span class="mock-title">Casebot — Değerlendirme</span></div>
+                        <div class="mock-body">
+                            <div class="mock-chart">
+                                <div class="mc-bar" style="--h:40%"></div><div class="mc-bar mc--p" style="--h:68%"></div><div class="mc-bar" style="--h:55%"></div><div class="mc-bar mc--p" style="--h:82%"></div><div class="mc-bar" style="--h:60%"></div><div class="mc-bar mc--p" style="--h:90%"></div><div class="mc-bar" style="--h:48%"></div>
+                            </div>
+                            <div class="mock-score-row">
+                                <div class="mock-score"><div class="score-circle"><span>92</span></div><p>Uyumluluk</p></div>
+                                <div class="mock-score"><div class="score-circle sc--p"><span>87</span></div><p>Yetkinlik</p></div>
+                                <div class="mock-score"><div class="score-circle sc--g"><span>95</span></div><p>Potansiyel</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feat-row">
+                <div class="feat-content">
+                    <span class="feat-tag tag--green">Onboarding</span>
+                    <h3>Uzaktan işe başlatın</h3>
+                    <p>Dijital onboarding süreçleri ile yeni çalışanlarınızı lokasyon bağımsız olarak işe başlatın. İlk günden verimli olun.</p>
+                    <ul class="feat-list">
+                        <li>Dijital evrak yönetimi</li>
+                        <li>Kişiselleştirilmiş oryantasyon</li>
+                        <li>Görev takip sistemi</li>
+                    </ul>
+                </div>
+                <div class="feat-visual">
+                    <div class="feat-mockup mockup--green">
+                        <div class="mock-bar"><span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span><span class="mock-title">Harmonise — Onboarding</span></div>
+                        <div class="mock-body">
+                            <div class="mock-checklist">
+                                <div class="mc-item done"><span class="mc-check"></span>Sözleşme imzalandı</div>
+                                <div class="mc-item done"><span class="mc-check"></span>Kimlik belgeleri yüklendi</div>
+                                <div class="mc-item done"><span class="mc-check"></span>Ekipman talebi oluşturuldu</div>
+                                <div class="mc-item active"><span class="mc-check mc-check--active"></span>Oryantasyon planı gönderildi</div>
+                                <div class="mc-item"><span class="mc-check mc-check--empty"></span>İlk gün toplantısı</div>
+                            </div>
+                            <div class="mock-progress"><div class="mp-label">Tamamlanma</div><div class="mp-bar"><span style="width:72%"></span></div><div class="mp-val">72%</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== STATS =================== -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-inner">
+                <div class="stat-item"><span class="stat-num" data-target="1000000">0</span><span class="stat-suf">+</span><p>Değerlendirilen Aday</p></div>
+                <div class="stat-item"><span class="stat-num" data-target="45">0</span><span class="stat-suf">%</span><p>Daha Fazla Aday</p></div>
+                <div class="stat-item"><span class="stat-num" data-target="3">0</span><span class="stat-suf">x</span><p>Daha Hızlı Süreç</p></div>
+                <div class="stat-item"><span class="stat-num" data-target="88">0</span><span class="stat-suf">%</span><p>Müşteri Memnuniyeti</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== TESTIMONIALS =================== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-head center">
+                <h2>Müşterilerimiz <em>ne diyor?</em></h2>
+            </div>
+            <div class="test-slider" id="testSlider">
+                <div class="test-card-single" id="testCard">
+                    <div class="test-quote-mark">&ldquo;</div>
+                    <blockquote id="testQuote"></blockquote>
+                    <div class="test-author">
+                        <div class="test-avatar" id="testAvatar"></div>
+                        <div>
+                            <strong id="testCompany"></strong>
+                            <span>İnsan Kaynakları</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-nav">
+                    <button class="test-dot active" data-index="0"></button>
+                    <button class="test-dot" data-index="1"></button>
+                    <button class="test-dot" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== AWARDS / LOGO LOOP =================== -->
+    <section class="awards-loop">
+        <div class="container">
+            <div class="section-head center">
+                <h2>Uluslararası arenada <em>tanınan platform.</em></h2>
+            </div>
+        </div>
+        <div class="awards-track">
+            <div class="awards-slide">
+                <img class="award-img" src="images/reward-logo/global-business-tech-awards-2022-finalist-badge.png" alt="Global Business Tech Awards 2022">
+                <img class="award-img" src="images/reward-logo/crozdesk-happiest-users-badge-2020.png.webp" alt="Crozdesk Happiest Users">
+                <img class="award-img" src="images/reward-logo/ms-award.png" alt="Microsoft Best Startup Award">
+                <img class="award-img" src="images/reward-logo/the-stevies.png" alt="Stevie Awards">
+                <img class="award-img" src="images/reward-logo/hcm.png" alt="HCM Excellence Awards">
+                <img class="award-img" src="images/reward-logo/hrex.png" alt="HR Excellence Awards">
+                <img class="award-img" src="images/reward-logo/bronze-tech-award-2021-01.png" alt="Bronze Tech Award 2021">
+                <img class="award-img" src="images/reward-logo/award-top-recruiter.png" alt="Top Recruiter Award">
+                <img class="award-img" src="images/reward-logo/peer-awards.png" alt="Peer Awards">
+                <!-- duplicate for seamless loop -->
+                <img class="award-img" src="images/reward-logo/global-business-tech-awards-2022-finalist-badge.png" alt="Global Business Tech Awards 2022">
+                <img class="award-img" src="images/reward-logo/crozdesk-happiest-users-badge-2020.png.webp" alt="Crozdesk Happiest Users">
+                <img class="award-img" src="images/reward-logo/ms-award.png" alt="Microsoft Best Startup Award">
+                <img class="award-img" src="images/reward-logo/the-stevies.png" alt="Stevie Awards">
+                <img class="award-img" src="images/reward-logo/hcm.png" alt="HCM Excellence Awards">
+                <img class="award-img" src="images/reward-logo/hrex.png" alt="HR Excellence Awards">
+                <img class="award-img" src="images/reward-logo/bronze-tech-award-2021-01.png" alt="Bronze Tech Award 2021">
+                <img class="award-img" src="images/reward-logo/award-top-recruiter.png" alt="Top Recruiter Award">
+                <img class="award-img" src="images/reward-logo/peer-awards.png" alt="Peer Awards">
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== PRICING =================== -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-head center">
+                <h2>İhtiyacınıza uygun<br><em>planı seçin.</em></h2>
+                <p class="section-sub">Her ölçekteki şirket için esnek çözümler.</p>
+            </div>
+            <div class="price-grid">
+                <div class="price-card has-trial">
+                    <div class="pc-trial-tag">1 Ay Ücretsiz</div>
+                    <div class="pc-inner">
+                        <h3>Analyse</h3>
+                        <p class="pc-type">Aday Takip Sistemi</p>
+                        <ul>
+                            <li>Çoklu kanal ilan yönetimi</li>
+                            <li>AI destekli CV eşleştirme</li>
+                            <li>Otomatik aday skorlama</li>
+                            <li>Mülakat davet otomasyonu</li>
+                            <li>Gelişmiş raporlama</li>
+                        </ul>
+                        <a href="#contact" class="btn btn--price-unified">Bilgi Al &rarr;</a>
+                    </div>
+                </div>
+                <div class="price-card has-trial">
+                    <div class="pc-trial-tag">1 Ay Ücretsiz</div>
+                    <div class="pc-inner">
+                        <h3>Harmonise</h3>
+                        <p class="pc-type">Onboarding Platformu</p>
+                        <ul>
+                            <li>Dijital evrak yönetimi</li>
+                            <li>Kişiselleştirilmiş oryantasyon</li>
+                            <li>Görev takip sistemi</li>
+                            <li>Anlık geri bildirim</li>
+                            <li>Entegrasyon desteği</li>
+                        </ul>
+                        <a href="#contact" class="btn btn--price-unified">Bilgi Al &rarr;</a>
+                    </div>
+                </div>
+                <div class="price-card">
+                    <div class="pc-inner">
+                        <h3>Casebot</h3>
+                        <p class="pc-type">Değerlendirme Merkezi</p>
+                        <ul>
+                            <li>400+ test ve envanter</li>
+                            <li>Online vaka analizi</li>
+                            <li>Yetkinlik bazlı raporlama</li>
+                            <li>Benchmark karşılaştırma</li>
+                            <li>Detaylı aday profilleri</li>
+                        </ul>
+                        <a href="#contact" class="btn btn--price-unified">Bilgi Al &rarr;</a>
+                    </div>
+                </div>
+                <div class="price-card">
+                    <div class="pc-inner">
+                        <h3>Recognise</h3>
+                        <p class="pc-type">Yetenek Yönetimi</p>
+                        <ul>
+                            <li>360° performans değerlendirme</li>
+                            <li>Kariyer yol haritası</li>
+                            <li>Yedekleme planlaması</li>
+                            <li>Gelişim önerileri</li>
+                            <li>Potansiyel analizi</li>
+                        </ul>
+                        <a href="#contact" class="btn btn--price-unified">Bilgi Al &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== CTA =================== -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-glow"></div>
+                <h2>İK süreçlerinizi dönüştürmeye <em>hazır mısınız?</em></h2>
+                <p>Sizin için en uygun çözümü birlikte belirleyelim.</p>
+                <form class="cta-form" onsubmit="return false;">
+                    <input type="email" placeholder="İş e-posta adresiniz" required>
+                    <button type="submit" class="btn btn--cta">Bilgi Al &rarr;</button>
+                </form>
+                <small>KVKK uyumlu · Verileriniz güvende</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="f-logo">peoplise</a>
+                    <p>Yeni nesil yetenek kazanımı platformu.<br>İK süreçlerinizi dijitalleştirin.</p>
+                </div>
+                <div class="footer-col"><h4>Ürünler</h4><a href="#">Analyse</a><a href="#">Harmonise</a><a href="#">Casebot</a><a href="#">Recognise</a></div>
+                <div class="footer-col"><h4>Şirket</h4><a href="#">Hakkımızda</a><a href="#">Blog</a><a href="#">Kariyer</a><a href="#">İletişim</a></div>
+                <div class="footer-col"><h4>Destek</h4><a href="#">Yardım Merkezi</a><a href="#">Entegrasyonlar</a><a href="#">KVKK</a></div>
+            </div>
+            <div class="footer-bot">
+                <p>&copy; 2025 Elba HR İnsan Kaynakları A.Ş.</p>
+                <div class="f-legal"><a href="#">Gizlilik</a><a href="#">Koşullar</a><a href="#">KVKK</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
