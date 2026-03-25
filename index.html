@@ -11,62 +11,14 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-wrap">
-            <a href="#" class="nav-logo">peoplise</a>
-            <ul class="nav-menu" id="navMenu">
-                <li class="nav-dropdown" id="navDropdown">
-                    <a href="#platform" class="nav-drop-trigger">Ürünler <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                    <div class="dropdown-panel">
-                        <div class="dropdown-mega">
-                            <div class="drop-col">
-                                <a href="#platform" class="drop-col-head drop-col-head--amber">Analyse</a>
-                                <span class="drop-col-sub">Aday Takip Sistemi</span>
-                                <ul class="drop-links">
-                                    <li><a href="#platform">Aday Takip Sistemi</a></li>
-                                    <li><a href="#platform">Entegre Test ve Envanterler</a></li>
-                                </ul>
-                            </div>
-                            <div class="drop-col">
-                                <a href="#platform" class="drop-col-head drop-col-head--green">Harmonise</a>
-                                <span class="drop-col-sub">Onboarding Platformu</span>
-                                <ul class="drop-links">
-                                    <li><a href="#platform">Oryantasyon Programı</a></li>
-                                    <li><a href="#platform">Onboarding</a></li>
-                                    <li><a href="#platform">Remote Onboarding</a></li>
-                                    <li><a href="#platform">Reboarding</a></li>
-                                    <li><a href="#platform">Offboarding</a></li>
-                                </ul>
-                            </div>
-                            <div class="drop-col">
-                                <a href="#platform" class="drop-col-head drop-col-head--purple">Casebot</a>
-                                <span class="drop-col-sub">Değerlendirme Merkezi</span>
-                                <ul class="drop-links">
-                                    <li><a href="#platform">Online Vaka Analizi</a></li>
-                                    <li><a href="#platform">Yetkinlik Testleri</a></li>
-                                </ul>
-                            </div>
-                            <div class="drop-col">
-                                <a href="#platform" class="drop-col-head drop-col-head--rose">Recognise</a>
-                                <span class="drop-col-sub">Yetenek Yönetimi</span>
-                                <ul class="drop-links">
-                                    <li><a href="#platform">Performans Değerlendirme</a></li>
-                                    <li><a href="#platform">Kariyer Yol Haritası</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="#testimonials">Referanslar</a></li>
-                <li><a href="#">Entegrasyonlar</a></li>
-                <li><a href="#">Hakkımızda</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
+    <header class="landing-header">
+        <div class="container landing-header-wrap">
+            <a href="#" class="landing-logo" aria-label="Peoplise">
+                <img src="images/logo.svg" alt="Peoplise" class="landing-logo-img">
+            </a>
             <a href="#contact" class="nav-cta">Bilgi Al</a>
-            <button class="hamburger" id="hamburger" aria-label="Menü"><span></span><span></span></button>
         </div>
-    </nav>
+    </header>
 
     <!-- =================== HERO =================== -->
     <section class="hero">
@@ -77,7 +29,6 @@
                 <h1>İnsan kaynakları süreçlerinizi <em>dijitalleştirin.</em></h1>
                 <p>İşe alım, değerlendirme ve onboarding süreçlerinizi tek platformdan yönetin. Daha hızlı kararlar, daha iyi aday deneyimi.</p>
                 <div class="hero-btns">
-                    <a href="#contact" class="btn btn--primary">Ücretsiz Demo Al <span>&rarr;</span></a>
                     <a href="#platform" class="btn btn--ghost">Platformu Keşfet</a>
                 </div>
             </div>
@@ -102,6 +53,23 @@
                             <label>Telefon</label>
                             <input type="tel" placeholder="+90 5XX XXX XX XX">
                         </div>
+                        <div class="form-group">
+                            <label>İlgilendiğiniz Ürün</label>
+                            <select class="form-select">
+                                <option value="" disabled selected>Ürün seçiniz</option>
+                                <option value="analyse">Analyse — Aday Takip Sistemi</option>
+                                <option value="harmonise">Harmonise — Onboarding Platformu</option>
+                                <option value="casebot">Casebot — Değerlendirme Merkezi</option>
+                                <option value="recognise">Recognise — Yetenek Yönetimi</option>
+                                <option value="yonlendirme">Bana uygun çözüm için yönlendirme almak istiyorum</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-kvkk">
+                            <label class="kvkk-checkbox">
+                                <input type="checkbox" required>
+                                <span><a href="javascript:void(0)" id="kvkkLink">KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum.</span>
+                            </label>
+                        </div>
                         <button type="submit" class="btn btn--form">Bilgi Al <span>&rarr;</span></button>
                     </form>
                 </div>
@@ -116,18 +84,18 @@
             <div class="logos-slide">
                 <img class="logo-img" src="images/marka-logo/arcelik_logo.png" alt="Arçelik">
                 <img class="logo-img" src="images/marka-logo/ford-otosan-logo.png" alt="Ford Otosan">
-                <img class="logo-img" src="images/marka-logo/mercedes-benz-logo.png" alt="Mercedes-Benz">
+
                 <img class="logo-img" src="images/marka-logo/garanti-logo.png" alt="Garanti BBVA">
                 <img class="logo-img" src="images/marka-logo/koc-logo.png" alt="Koç Holding">
                 <img class="logo-img" src="images/marka-logo/kpmg-logo-1.png" alt="KPMG">
                 <img class="logo-img" src="images/marka-logo/sunexpress-logo-1.png" alt="SunExpress">
-                <img class="logo-img" src="images/marka-logo/carrefoursa-logo-1.png" alt="Carrefoursa">
+
                 <img class="logo-img" src="images/marka-logo/turkiye-is-bankasi-logo.png" alt="Türkiye İş Bankası">
                 <img class="logo-img" src="images/marka-logo/yemeksepeti-logo.png" alt="Yemeksepeti">
                 <img class="logo-img" src="images/marka-logo/opet-logo.png" alt="Opet">
                 <img class="logo-img" src="images/marka-logo/sisecam-yatay-logo.png" alt="Şişecam">
                 <img class="logo-img" src="images/marka-logo/turk-traktor-logo.png" alt="Türk Traktör">
-                <img class="logo-img" src="images/marka-logo/sutas-logo.png" alt="Sütaş">
+
                 <img class="logo-img" src="images/marka-logo/aygaz-logo.png" alt="Aygaz">
                 <img class="logo-img" src="images/marka-logo/kale-logo.png" alt="Kale">
                 <img class="logo-img" src="images/marka-logo/koctas-logo.png" alt="Koçtaş">
@@ -137,18 +105,18 @@
                 <!-- duplicate for seamless loop -->
                 <img class="logo-img" src="images/marka-logo/arcelik_logo.png" alt="Arçelik">
                 <img class="logo-img" src="images/marka-logo/ford-otosan-logo.png" alt="Ford Otosan">
-                <img class="logo-img" src="images/marka-logo/mercedes-benz-logo.png" alt="Mercedes-Benz">
+
                 <img class="logo-img" src="images/marka-logo/garanti-logo.png" alt="Garanti BBVA">
                 <img class="logo-img" src="images/marka-logo/koc-logo.png" alt="Koç Holding">
                 <img class="logo-img" src="images/marka-logo/kpmg-logo-1.png" alt="KPMG">
                 <img class="logo-img" src="images/marka-logo/sunexpress-logo-1.png" alt="SunExpress">
-                <img class="logo-img" src="images/marka-logo/carrefoursa-logo-1.png" alt="Carrefoursa">
+
                 <img class="logo-img" src="images/marka-logo/turkiye-is-bankasi-logo.png" alt="Türkiye İş Bankası">
                 <img class="logo-img" src="images/marka-logo/yemeksepeti-logo.png" alt="Yemeksepeti">
                 <img class="logo-img" src="images/marka-logo/opet-logo.png" alt="Opet">
                 <img class="logo-img" src="images/marka-logo/sisecam-yatay-logo.png" alt="Şişecam">
                 <img class="logo-img" src="images/marka-logo/turk-traktor-logo.png" alt="Türk Traktör">
-                <img class="logo-img" src="images/marka-logo/sutas-logo.png" alt="Sütaş">
+
                 <img class="logo-img" src="images/marka-logo/aygaz-logo.png" alt="Aygaz">
                 <img class="logo-img" src="images/marka-logo/kale-logo.png" alt="Kale">
                 <img class="logo-img" src="images/marka-logo/koctas-logo.png" alt="Koçtaş">
@@ -255,6 +223,37 @@
                     </div>
                 </div>
             </div>
+            <!-- Feature 4 -->
+            <div class="feat-row feat-row--rev">
+                <div class="feat-content">
+                    <span class="feat-tag tag--rose">Yetenek Yönetimi</span>
+                    <h3>Yetenekleri keşfedin, geliştirin</h3>
+                    <p>360° performans değerlendirme, kariyer yol haritaları ve yedekleme planlaması ile organizasyonunuzdaki yetenekleri en verimli şekilde yönetin.</p>
+                    <ul class="feat-list">
+                        <li>360° performans değerlendirme</li>
+                        <li>Kariyer yol haritası</li>
+                        <li>Yedekleme planlaması</li>
+                    </ul>
+                </div>
+                <div class="feat-visual">
+                    <div class="feat-mockup mockup--rose">
+                        <div class="mock-bar"><span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span><span class="mock-title">Recognise — Yetenek Yönetimi</span></div>
+                        <div class="mock-body">
+                            <div class="mock-score-row">
+                                <div class="mock-score"><div class="score-circle sc--rose"><span>94</span></div><p>Performans</p></div>
+                                <div class="mock-score"><div class="score-circle sc--p"><span>88</span></div><p>Potansiyel</p></div>
+                                <div class="mock-score"><div class="score-circle sc--g"><span>91</span></div><p>Gelişim</p></div>
+                            </div>
+                            <div class="mock-checklist" style="margin-top:16px">
+                                <div class="mc-item done"><span class="mc-check"></span>Performans hedefleri belirlendi</div>
+                                <div class="mc-item done"><span class="mc-check"></span>360° geri bildirim tamamlandı</div>
+                                <div class="mc-item active"><span class="mc-check mc-check--active"></span>Kariyer planı oluşturuluyor</div>
+                                <div class="mc-item"><span class="mc-check mc-check--empty"></span>Yedekleme planlaması</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -349,7 +348,7 @@
                             <li>Mülakat davet otomasyonu</li>
                             <li>Gelişmiş raporlama</li>
                         </ul>
-                        <a href="#contact" class="btn btn--price-unified">Bilgi Al &rarr;</a>
+                        <a href="#heroForm" class="btn btn--price-unified">Bilgi Al &rarr;</a>
                     </div>
                 </div>
                 <div class="price-card has-trial">
@@ -364,7 +363,7 @@
                             <li>Anlık geri bildirim</li>
                             <li>Entegrasyon desteği</li>
                         </ul>
-                        <a href="#contact" class="btn btn--price-unified">Bilgi Al &rarr;</a>
+                        <a href="#heroForm" class="btn btn--price-unified">Bilgi Al &rarr;</a>
                     </div>
                 </div>
                 <div class="price-card">
@@ -378,7 +377,7 @@
                             <li>Benchmark karşılaştırma</li>
                             <li>Detaylı aday profilleri</li>
                         </ul>
-                        <a href="#contact" class="btn btn--price-unified">Bilgi Al &rarr;</a>
+                        <a href="#heroForm" class="btn btn--price-unified">Bilgi Al &rarr;</a>
                     </div>
                 </div>
                 <div class="price-card">
@@ -392,50 +391,117 @@
                             <li>Gelişim önerileri</li>
                             <li>Potansiyel analizi</li>
                         </ul>
-                        <a href="#contact" class="btn btn--price-unified">Bilgi Al &rarr;</a>
+                        <a href="#heroForm" class="btn btn--price-unified">Bilgi Al &rarr;</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- =================== CTA =================== -->
-    <section class="cta" id="contact">
-        <div class="container cta-container">
-            <div class="cta-text">
-                <h2>İK süreçlerinizi dönüştürmeye <em>hazır mısınız?</em></h2>
-                <p>Sizin için en uygun çözümü birlikte belirleyelim. Formu doldurun, ekibimiz sizinle iletişime geçsin.</p>
+    <!-- KVKK Modal -->
+    <div class="kvkk-overlay" id="kvkkOverlay">
+        <div class="kvkk-modal">
+            <div class="kvkk-modal-header">
+                <h3>Kişisel Verilerin Korunması Aydınlatma Metni</h3>
+                <button class="kvkk-close" id="kvkkClose">&times;</button>
             </div>
-            <div class="cta-form-card">
-                <h3>Bilgi Talep Formu</h3>
-                <p>Size özel demo için formu doldurun.</p>
-                <form onsubmit="return false;">
-                    <div class="form-group">
-                        <label>Ad Soyad</label>
-                        <input type="text" placeholder="Adınız Soyadınız">
-                    </div>
-                    <div class="form-group">
-                        <label>Şirket</label>
-                        <input type="text" placeholder="Şirket Adı">
-                    </div>
-                    <div class="form-group">
-                        <label>İş E-posta</label>
-                        <input type="email" placeholder="ornek@sirket.com">
-                    </div>
-                    <div class="form-group">
-                        <label>Telefon</label>
-                        <input type="tel" placeholder="+90 5XX XXX XX XX">
-                    </div>
-                    <button type="submit" class="btn btn--form">Bilgi Al <span>&rarr;</span></button>
-                </form>
+            <div class="kvkk-modal-body">
+                <p>Bu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("Kanun") kapsamında, Logo Yazılım Sanayi ve Ticaret A.Ş.'nin veri sorumlusu sıfatıyla hareket ettiği hallerde, Kanun'un 10.maddesine uygun olarak, gerçek kişilere ("Veri Sahibi"), kişisel verilerinin toplanma, işlenme, saklanma, korunma ve imha süreç, şekil ve amaçları ile Kanun uyarınca haklarına ve haklarını kullanma yöntemlerine ilişkin bilgi verilmesi amacıyla hazırlanmıştır.</p>
+
+                <p>Logo grup şirketleri için tıklayınız. Kişisel verilerinizin işlenmesine ilişkin ayrıntılı bilgiye "Logo Grubu Şirketleri Kişisel Verilerin Korunması, İşlenmesi, Saklanması Ve İmhası Politikası"ndan ("Politika") ulaşabilirsiniz.</p>
+
+                <h4>Kişisel Verilerinizi Hangi Amaçlarla İşliyoruz?</h4>
+                <p>Veri Sorumlusu olarak kişisel verilerinizi Kanun'un maddelerine uygun olarak ve aşağıdaki amaçlarla işleyebilmekteyiz:</p>
+                <ul>
+                    <li>Sözleşmelerin müzakeresi, akdedilmesi ve ifası</li>
+                    <li>Ürün ve hizmetlerin sunulabilmesi</li>
+                    <li>Sunulan ürün ve hizmetlerin taleplere uygun olarak özelleştirilmesi; müşteri ihtiyaçları, yasal ve teknik gelişmeler sebebiyle güncellenmesi, geliştirilmesi</li>
+                    <li>Sunulan ürün ve hizmetler özelinde, sistemlere kullanıcı tanımlamalarının yapılması</li>
+                    <li>Çağrı merkezi ve uzaktan destek hizmetlerinin sağlanması, çağrı sayısı ve içerik takibi</li>
+                    <li>Yeni veya mevcut ürün, hizmet ve kampanyaların duyurulması, satış ve pazarlama faaliyetlerinin yürütülmesi</li>
+                    <li>Pazar araştırması yapılması</li>
+                    <li>İstatistik oluşturulması ve kullanımların analiz edilmesi</li>
+                    <li>Ürün, hizmet ve servis bedellerinin ödenmesi, tahsil edilmesi, tahsilat yönteminin seçilmesi</li>
+                    <li>İrtibat/iletişim sağlanması</li>
+                    <li>İşbirliği yapılan firmalar, tedarikçiler, yeniden satıcılar ve hizmet alınan firmalarla olan ticari ilişkilerin yürütülmesi</li>
+                    <li>İşbirliği çerçevesinde raporlama yapılması</li>
+                    <li>Yeniden satıcıların iş ortaklığı başvuru sürecinin değerlendirilmesi</li>
+                    <li>Şirketin ticari stratejilerinin geliştirilmesi ve planlarının yapılması</li>
+                    <li>Logo Grubu Şirketleri tarafından memnuniyet ölçümü anketleri için iletişim kurulması</li>
+                    <li>Anlaşmalı web sitelerinden ve kurumlardan yapılan alışverişlerde indirim sağlanması</li>
+                    <li>Logo Grubu Şirketleri tarafından düzenlenen etkinliklerde/eğitimlerde katılımcı kaydının oluşturulması, sertifikaların/katılım belgelerinin düzenlenmesi, ödül/hediye sahiplerinin belirlenmesi ve ödül/hediyelerin teslimi</li>
+                    <li>Adli/idari süreçlerin yönetimi, kamu kurum kuruluşlarından gelen taleplere cevap verilmesi, yasal düzenlemelere bağlı olarak hukuki yükümlülüklerin yerine getirilmesi, hukuki uyuşmazlıkların çözümlenmesi</li>
+                    <li>Yatırımcı ilişkilerinin yürütülmesi</li>
+                    <li>Şirketin başka bir şirket ile birleşmesi, bölünmesi, tamamının veya bir kısmının devredilmesi halinde bu hukuki işlemden doğan sonuçların temin edilmesi</li>
+                    <li>Sosyal medya paylaşımlarında Logo Grubu Şirketleri çalışanların, Gerçek Kişi Yeniden Satıcı/Müşterilerin, Yeniden Satıcı/Müşteri İlgililerinin tanıtılması</li>
+                    <li>İş görüşmelerinin yürütülmesi, iş başvurularının değerlendirilmesi</li>
+                    <li>İş ilişkisinin/sözleşmesinin kurulması, yürütülmesi ve sonlandırılması</li>
+                    <li>Logo Grubu Şirketleri çalışanlarının iş sözleşmelerinden doğan asıl ve yan haklardan yararlandırılması, performansının ve çalışmalarının değerlendirilmesi</li>
+                    <li>Çalışanlara kullanıcı hesabı açılması, şirket içi kimlik ve yemek kartı verilmesi</li>
+                    <li>Şirket çalışanlarının ulaşım organizasyonunun sağlanması, şirket havuz araçlarının takibi</li>
+                    <li>Şirket adına bir organizasyona katılım olması durumunda, katılımcı kaydının oluşturulması</li>
+                    <li>Çalışanların eğitimlere katılım ve sertifika kayıtlarının oluşturulması</li>
+                    <li>Ziyaretçi kayıtlarının oluşturulması ve takibi</li>
+                    <li>Şirketin iç ve çevre güvenliği ile Web Sitesi'nin ve Uygulamalar'ın güvenliğinin sağlanması</li>
+                    <li>Web Sitesi'nin kullanım analizi</li>
+                    <li>Kişisel veri envanterinin oluşturulması</li>
+                    <li>Kişisel verilere ilişkin olanlar dahil, yazılı, sözlü veya elektronik olarak iletilen tüm soru, talep, öneri, şikâyet ve başvuruların değerlendirilmesi, bunlara cevap verilmesi</li>
+                </ul>
+
+                <h4>İşlenen Kişisel Verilerinizi Kimlere Hangi Amaçlarla Aktarıyoruz?</h4>
+                <p>Kişisel verileriniz, yukarıda belirttiğimiz amaçlar kapsamında ve Kanun ve kişisel verilere ilişkin yürürlükte bulunan diğer emredici mevzuat hükümlerine uygun olarak, yurt içinde veya yurt dışındaki aşağıda belirtilen üçüncü kişilere aktarılabilmektedir:</p>
+                <ul>
+                    <li>Danışmanlar</li>
+                    <li>Denetim Firmaları</li>
+                    <li>Hizmet Alınan Firmalar</li>
+                    <li>İşbirliği Yapılan Firmalar</li>
+                    <li>Logo Grubu Şirketleri</li>
+                    <li>Müşteriler</li>
+                    <li>Pay Sahipleri</li>
+                    <li>Şirket Yetkilileri</li>
+                    <li>Tedarikçiler</li>
+                    <li>Teknopark Yönetimi (Yönetici Şirket)</li>
+                    <li>Bankalar ve Finans Kuruluşları</li>
+                    <li>Yargısal Merciler ve Kamu Otoriterleri</li>
+                    <li>Yeniden Satıcılar</li>
+                    <li>Merkezi Kayıt Kuruluşu, Kamuyu Aydınlatma Platformu, Borsa İstanbul A.Ş., Saklama Kuruluşları, Sermaye Piyasası Kurulu</li>
+                </ul>
+
+                <h4>Kişisel Veri Toplama Yöntemlerimiz ve Toplamamızın Hukuki Sebepleri Nelerdir?</h4>
+                <p>Kişisel Verilerinizi; Politika'nın, Kanun'un ve ilgili sair mevzuatın düzenlemelerine uygun olarak, yazılı, sözlü, elektronik yollardan, görüntü/ses kaydı yoluyla veya fiziksel olarak sizinle karşı karşıya gelmek suretiyle toplayabiliyor ve işleyebiliyoruz.</p>
+                <p>Veri toplama sürecimiz; i) Web Sitesi, mobil uygulamalar, e-posta, işe alım portalları dahil dijital mecralar veya yazılım üzerinden; ii) sözleşmeler, başvurular, formlar, çağrı merkezi, uzaktan destek, satış ve pazarlama birimi, Web Siteleri'ndeki çerezler, kartvizit, telefon gibi vasıtalar aracılığıyla; veya iii) Veri Sahibi ile yüz yüze yapılan görüşmeler aracılığıyla gerçekleşebilmektedir.</p>
+
+                <h4>Veri Sahibi Olarak Haklarınız Nelerdir?</h4>
+                <p>Kanun'un 11. maddesi uyarınca, Veri Sahibi olarak Şirketimize başvurarak kendinizle ilgili:</p>
+                <ul>
+                    <li>Verilerinizin işlenip işlenmediğini öğrenme</li>
+                    <li>Verileriniz işlenmişse buna ilişkin bilgi talep etme</li>
+                    <li>Verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+                    <li>Yurt içinde veya yurt dışında Verilerin aktarıldığı üçüncü kişileri bilme</li>
+                    <li>Verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini ve bu kapsamda yapılan işlemin Verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
+                    <li>Kanun ve ilgili diğer mevzuat hükümlerine uygun olarak işlenmiş olmasına rağmen, işlenmesini gerektiren sebeplerin ortadan kalkması hâlinde Verilerin silinmesini veya yok edilmesini isteme</li>
+                    <li>İşlenen Verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme</li>
+                    <li>Verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
+                </ul>
+                <p>haklarına sahipsiniz.</p>
+
+                <p>Haklarınızı kullanmak istemeniz durumunda, taleplerinizi; yazılı olarak veya kayıtlı elektronik posta (KEP), güvenli elektronik imza, mobil imza ya da tarafınızdan Şirketimize daha önce bildirilen ve Şirketimiz sisteminde kayıtlı bulunan elektronik posta adresiniz vasıtasıyla Şirketimize iletebilirsiniz.</p>
+                <ul>
+                    <li>Posta yoluyla, Şirketimizin Gebze Organize Sanayi Bölgesi, Şahabettin Bilgisu Cad. No:609 Gebze/Kocaeli adresine yazılı olarak gönderebilirsiniz.</li>
+                    <li>Sistemlerimizde kayıtlı bulunan e-posta adresinizi kullanarak, kvkk1@logo.com.tr e-posta adresine taleplerinizi içeren bir e-posta gönderebilirsiniz.</li>
+                    <li>Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'de yer alan diğer yöntemlerle taleplerinizi bize iletebilirsiniz.</li>
+                </ul>
+                <p>Talebinizin niteliğine göre en kısa sürede ve en geç otuz gün içinde başvurularınız ücretsiz olarak sonuçlandırılacaktır; ancak işlemin ayrıca bir maliyet gerektirmesi halinde Kişisel Verileri Koruma Kurulu tarafından belirlenecek tarifeye göre tarafınızdan ücret talep edilebilecektir.</p>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-copy">&copy; 2025 Elba HR İnsan Kaynakları A.Ş.</p>
+            <div class="footer-bot" style="border-top:none;text-align:center;justify-content:center">
+                <p>&copy; Copyright 2026 - Peoplise</p>
+            </div>
         </div>
     </footer>
 
